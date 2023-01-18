@@ -1,4 +1,4 @@
-baseURL = 'https://jure-d.github.io/olfs-spletnastran/'
+baseURL = 'https://olfs-test.dvorsak.xyz/'
 languageCode = 'sl'
 title = 'OLFS - Peskovnik'
 canonifyurls = true
