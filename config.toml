@@ -1,0 +1,3 @@
+baseURL = 'http://example.org/'
+languageCode = 'sl'
+title = 'OLFS - Peskovnik'
