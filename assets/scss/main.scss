@@ -95,6 +95,17 @@ nav {
   margin-bottom: 3rem;
 }
 
+.background-watermark-container {
+  background-image: url("site-images/logos/watermark.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.flip-background {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 .obvestila-cards-container {
   width: 100%;
 }
