@@ -41,7 +41,7 @@ nav {
       a {
         font-size: 2rem;
         font-weight: 400;
-        color: black;
+        color: $olfs-dark-gray;
       }
 
       a::after {
@@ -59,6 +59,19 @@ nav {
       }
     }
   }
+}
+.underline-link::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  transition: all 0.3s;
+}
+
+.underline-link:hover::after {
+  width: 100%;
+  background: $olfs-red;
 }
 
 .welecome-screen {
@@ -102,7 +115,7 @@ nav {
   }
   a {
     font-size: 2rem;
-    color: $olfs-red;
+    color: $olfs-dark-gray;
     font-weight: 400;
     margin-bottom: 3rem;
   }
@@ -137,13 +150,13 @@ nav {
       font-size: 2rem;
     }
     h3 {
-      color: black;
+      color: $olfs-dark-gray;
       font-size: 1.5rem;
       font-weight: 400;
       margin-bottom: 1rem;
     }
     p {
-      color: black;
+      color: $olfs-dark-gray;
       font-size: 1rem;
       font-weight: 400;
     }
@@ -185,7 +198,7 @@ nav {
     // border: solid red 1px;
     a {
       font-size: 4rem;
-      color: black;
+      color: $olfs-dark-gray;
       font-weight: 600;
       margin:auto;
     }
@@ -199,7 +212,7 @@ nav {
     // border: solid red 1px;
     a {
       font-size: 3rem;
-      color: black;
+      color: $olfs-dark-gray;
       font-weight: 600;
     }
   }
@@ -212,7 +225,7 @@ nav {
     margin-bottom: 4rem;
     a {
       font-size: 2rem;
-      color: black;
+      color: $olfs-dark-gray;
       font-weight: 400;
       // display: none;
     }
@@ -249,18 +262,18 @@ nav {
   }
   .title {
     font-size: 2rem;
-    color: black;
+    color: $olfs-dark-gray;
     margin-right: auto;
   }
   .date {
     font-size: 1.5rem;
-    color: black;
+    color: $olfs-dark-gray;
     margin-right: auto;
     font-weight: 400;
   }
   .description {
     font-size: 1.5rem;
-    color: black;
+    color: $olfs-dark-gray;
     margin-right: auto;
     font-weight: 400;
     margin-top: 2rem;
@@ -270,7 +283,7 @@ nav {
 
 .single-content-container {
   font-size: 1rem;
-  color: black;
+  color: $olfs-dark-gray;
   font-weight: 400;
   margin-bottom: 4rem;
 }
@@ -304,5 +317,7 @@ footer {
   }
   p {
     text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
   }
 }
