@@ -9,6 +9,10 @@ $olfs-dark-gray: rgb(65, 64, 66);
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .olfs-red-text {
   color: $olfs-red;
 }
@@ -61,7 +65,7 @@ nav {
   }
 }
 .underline-link::after {
-  content: "";
+  // content: "";
   display: block;
   margin: auto;
   height: 3px;
@@ -87,6 +91,17 @@ nav {
     position: absolute;
     bottom: 0.5rem;
     right: 0;
+  }
+}
+
+#arrow-button {
+  // border: solid orange 1px;
+  bottom: 1.5rem;
+  position: absolute;
+  img {
+    position: static;
+    width: 5rem;
+    margin-left: calc(50vw - 1.5rem);
   }
 }
 
@@ -197,8 +212,18 @@ nav {
   h3 {
     font-size: 2.5rem;
     font-weight: 400;
-    margin-bottom: 1.5rem;
     color: $olfs-gray;
+  }
+  h4 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #804A00;
+  }
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: $olfs-dark-gray;
   }
   .golden-container {
     width: 100%;
@@ -253,6 +278,10 @@ nav {
   .golden {
     border-top: solid goldenrod 0.25rem;
     border-bottom: solid goldenrod 0.25rem;
+  }
+  .bronze {
+    border-top: solid #804A00 0.25rem;
+    border-bottom: solid #804A00 0.25rem;
   }
 
   // border: solid red 1px;
