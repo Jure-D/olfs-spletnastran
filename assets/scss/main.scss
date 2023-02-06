@@ -340,6 +340,8 @@ footer {
       margin: 1rem;
     }
     .info-container {
+      // border: solid red 1px;
+      margin-left: 2rem;
       h1 {
         color: $olfs-red;
         font-weight: 400;
@@ -352,6 +354,10 @@ footer {
       h3 {
         font-weight: 400;
         font-size: 1.5rem;
+        a {
+          color: white;
+          font-weight: 400;
+        }
       }
     }
   }
