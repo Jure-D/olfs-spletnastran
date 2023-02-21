@@ -35,6 +35,7 @@ nav {
     justify-content: space-between;
     margin-left: auto;
     margin-right: 2rem;
+    align-items: center;
     // border: solid orange 1px;
 
     li {
@@ -189,6 +190,71 @@ nav {
   }
 }
 
+.dokumenti-container {
+  width: 60vw;
+  margin: auto;
+  // margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: solid red 1px;
+  h1 {
+    font-size: 2.5rem;
+    color: $olfs-red;
+    font-weight: 400;
+    margin-right: auto;
+  }
+  a {
+    font-size: 2rem;
+    color: $olfs-dark-gray;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+}
+
+.dokumenti-card {
+  width: 100%;
+  // height: 2rem;
+  // border: solid $olfs-gray 0.25rem;
+  // border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  img {
+    // border: solid red 1px;
+    width: 2rem;
+    height: 2rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+  .text-container {
+    // margin: 1rem;
+    // width: 73%;
+    // margin-left: auto;
+    // border: solid red 1px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    // align-items:center;
+    // justify-content:center;
+    // vertical-align: middle;
+    // align-items: center;
+    // vertical-align: middle;
+    h3 {
+      // line-height: 5rem;
+      // border: solid red 1px;
+      color: $olfs-red;
+      font-size: 1rem;
+    }
+    h4 {
+      color: $olfs-dark-gray;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+}
+
 .sponsors-index-container{
   width: 60vw;
   margin: auto;
@@ -290,10 +356,18 @@ nav {
 .sigle-container {
   width: 60vw;
   margin: auto;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   // border: solid red 1px;
+  .document-metadata {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // border: solid red 1px;
+  }
   .section-title {
     font-size: 2rem;
     color: $olfs-red;
@@ -304,12 +378,27 @@ nav {
     font-size: 2rem;
     color: $olfs-dark-gray;
     margin-right: auto;
+    // border: solid red 1px;
+  }
+  .document-title {
+    font-size: 2rem;
+    color: $olfs-dark-gray;
+    // border: solid red 1px;
   }
   .date {
     font-size: 1.5rem;
     color: $olfs-dark-gray;
     margin-right: auto;
     font-weight: 400;
+    // border: solid red 1px;
+  }
+  .publish-date {
+    font-size: 1.5rem;
+    color: $olfs-dark-gray;
+    margin-left: 1rem;
+    margin-right: auto;
+    font-weight: 400;
+    // border: solid red 1px;
   }
   .description {
     font-size: 1.5rem;
@@ -318,6 +407,12 @@ nav {
     font-weight: 400;
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+  .pdf-display {
+    // border: solid red 1px;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 5rem;
   }
 }
 
