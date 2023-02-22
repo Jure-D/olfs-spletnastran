@@ -16,68 +16,186 @@ html {
 .olfs-red-text {
   color: $olfs-red;
 }
+.olfs-dark-gray-text {
+  color: $olfs-dark-gray;
+}
 
 nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 6rem;
+  // border: solid red 1px;
 
   img {
     height: 5rem;
     margin-left: 1rem;
     // border: solid black 1px;
   }
-
-  ul {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
+  .menu-container{
     margin-left: auto;
     margin-right: 2rem;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    // border: solid blue 1px;
+    // justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    // border: solid orange 1px;
+    .mobile-hide {
+      color: $olfs-dark-gray;
+    }
+    a {
+      height: 100%;
+      margin-right: 1rem;
+      // border: solid red 1px;
+      font-size: 1.5rem;
+      font-weight: 400;
+      border-radius: 10px;
+      padding: 0.5rem;
+    }
+    a::after {
+      content: "";
+      display: block;
+      margin: auto;
+      height: 3px;
+      width: 0;
+      transition: all 0.3s;
+    }
 
-    li {
-      list-style: none;
-      // display: inline-block;
-      // border: solid yellow 1px;
-
-      a {
-        font-size: 2rem;
-        font-weight: 400;
+    a:hover::after {
+      width: 100%;
+      background: $olfs-red;
+    }
+    .icon {
+      display: none;
+    }
+    .fabman-icon {
+      color: white;
+      background-color: $olfs-red;
+    }
+    @media (max-width:1100px) {
+      .icon {
+        display: block;
         color: $olfs-dark-gray;
       }
-
-      a::after {
-        content: "";
-        display: block;
-        margin: auto;
-        height: 3px;
-        width: 0;
-        transition: all 0.3s;
+      .mobile-hide {
+        display: none;
       }
+    }
 
-      a:hover::after {
+
+
+
+
+
+  //   ul {
+  //     width: 50%;
+  //     display: flex;
+  //     flex-direction: row;
+  //     justify-content: space-between;
+  //     margin-left: auto;
+  //     margin-right: 2rem;
+  //     align-items: center;
+  //     border: solid orange 1px;
+
+  //     li {
+  //       list-style: none;
+  //       // display: inline-block;
+  //       // border: solid yellow 1px;
+
+  //       a {
+  //         font-size: 2rem;
+  //         font-weight: 400;
+  //         color: $olfs-dark-gray;
+  //       }
+
+  //       a::after {
+  //         content: "";
+  //         display: block;
+  //         margin: auto;
+  //         height: 3px;
+  //         width: 0;
+  //         transition: all 0.3s;
+  //       }
+
+  //       a:hover::after {
+  //         width: 100%;
+  //         background: $olfs-red;
+  //       }
+  //     }
+  //   }
+  //   
+  // }
+  // .underline-link::after {
+  //   // content: "";
+  //   display: block;
+  //   margin: auto;
+  //   height: 3px;
+  //   width: 0;
+  //   transition: all 0.3s;
+  // }
+
+  // .underline-link:hover::after {
+  //   width: 100%;
+  //   background: $olfs-red;
+  // }
+
+  // .two-lines {
+  //   font-size: 1.5rem;
+  //   font-weight: 500;
+  //   color: $olfs-dark-gray;
+  // }
+
+  // @media (max-width:1500px){
+  //   nav {
+  //     flex-direction: column;
+  //     width: 100vw;
+  //     height: auto;
+  //     ul {
+  //       flex-direction: column;
+  //       margin-right: auto;
+  //       width: 50rem;
+  //       display: none;
+  //     }
+  //   }
+  }
+}
+@media (max-width:1100px) {
+  nav {
+      // border: solid 1px red;
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+      // border: solid 1px green;
+    .menu-container {
+      flex-direction: column;
+      // border: solid 1px red;
+      margin: auto;
+      width: 100%;
+      
+      a {
+        // border: solid red 1px;
+        text-align: center;
+        line-height: 3rem;
+        margin: auto;
         width: 100%;
-        background: $olfs-red;
+        height: 3rem;
+        border-radius: 0px;
+      }
+      .fabman-icon {
+        color: white;
+        background-color: $olfs-red;
       }
     }
   }
 }
-.underline-link::after {
-  // content: "";
-  display: block;
-  margin: auto;
-  height: 3px;
-  width: 0;
-  transition: all 0.3s;
-}
 
-.underline-link:hover::after {
-  width: 100%;
-  background: $olfs-red;
-}
+
+
+
+
+
 
 .welecome-screen {
   width: 100%;
